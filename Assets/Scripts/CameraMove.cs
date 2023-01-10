@@ -18,6 +18,7 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /* Experimentive Version
         // Get the difference between the follow object, and the camera position
         Vector2 offset = followObject.position - transform.position;
 
@@ -28,15 +29,15 @@ public class CameraMove : MonoBehaviour
         if (velocity.magnitude > offset.magnitude || offset.magnitude < 0.05f)
             transform.position = followObject.position + zOffset;
         else
-            transform.Translate(velocity);
+            transform.Translate(velocity);*/
 
-        /* Old Version
+        // Old Version
         // Get the current position of the object being followed
         Vector3 currentPosition = followObject.position;
 
         // Offset the z position to the proper amount
         currentPosition.z += -5;
         transform.position = currentPosition;
-        */
+        
     }
 }
