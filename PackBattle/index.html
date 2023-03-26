@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Pong</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Unity WebGL Player | Pong Neo</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1194 height=823 style="width: 1194px; height: 823px; background: #231F20"></canvas>
-    <script src="Build/PackBattle.loader.js"></script>
+    <script src="Build/IA_Unity_Tests.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +27,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/PackBattle.data",
-        frameworkUrl: "Build/PackBattle.framework.js",
-        codeUrl: "Build/PackBattle.wasm",
+        dataUrl: "Build/IA_Unity_Tests.data",
+        frameworkUrl: "Build/IA_Unity_Tests.framework.js",
+        codeUrl: "Build/IA_Unity_Tests.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "TUJ Game Production Club",
         productName: "Pong",
